@@ -7,7 +7,13 @@ import { Component } from '@angular/core';
 })
 
 export class TestCalculatorComponent {
+
+    widthInput: number;
+    lengthInput: number;
+    calculatedValue: number;
+
     onFormSubmit(): void {
-        let length = document.getElementById("")
+       this.calculatedValue = this.widthInput * this.lengthInput;
+       console.log(this.calculatedValue);
     }
 }
